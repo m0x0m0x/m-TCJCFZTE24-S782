@@ -1,4 +1,4 @@
-<img src="https://i.postimg.cc/9XYdvTSf/bgg.gif" width="300%">
+<img src="./bgg.gif" width="300%">
 
 # m-TCJCFZTE24-S782
 
