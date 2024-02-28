@@ -1,38 +1,18 @@
-/* Reset basic styles for consistent behavior */
 * {
   margin: 0;
   padding: 0;
+  border: none;
   box-sizing: border-box;
+  background-color: #000;
 }
 
-/* Set body height to 100% of viewport */
-body {
+.full-body-bg {
+  background-image: url("https://i.giphy.com/1oF1KAEYvmXBMo6uTS.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100vh;
-}
-
-/* Style the "full-body" element */
-.full-body {
-  /* Define the background gradient using your desired colors */
-  background: linear-gradient(
-    100.6deg,
-    rgb(9, 9, 121) 11.2%,
-    rgb(144, 6, 161) 53.7%,
-    rgb(1, 37, 24) 100.2%
-  );
-
-  /* Apply the animation to the element */
-  animation: animateBackground 10s linear infinite;
-
-  /* Set the element height to 100% of viewport */
-  height: 100vh;
-}
-
-/* Define the animation for smooth background movement */
-@keyframes animateBackground {
-  from {
-    background-position: 0% 0%;
-  }
-  to {
-    background-position: 200% 0%;
-  }
+  filter: blur(4px) brightness(0.2);
+  z-index: -1; /* Send behind others */
+  overflow: hidden;
 }
