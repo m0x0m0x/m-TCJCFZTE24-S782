@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
-* {
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap") * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -12,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Kdam Thmor Pro", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -153,9 +152,15 @@ main {
 .btn--new {
   top: 4rem;
 }
+
 .btn--roll {
   top: 39.3rem;
 }
+.btn--roll:hover {
+  background-color: #c7365f;
+  color: white;
+}
+
 .btn--hold {
   top: 46.1rem;
 }
@@ -172,10 +177,11 @@ main {
 .dice {
   position: absolute;
   left: 50%;
-  top: 16.5rem;
+  top: 12.5rem;
   transform: translateX(-50%);
-  height: 20rem;
+  height: 25rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .player--winner {
