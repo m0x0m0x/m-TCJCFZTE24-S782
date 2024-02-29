@@ -23,6 +23,12 @@ diceEl.classList.add("hidden");
 // Rolling dice functionality
 btnRoll.addEventListener("click", function () {
   // 1. Generating a random dice roll
+  const dice = Math.trunc(Math.random() * 6) + 1;
+  console.log(`Generated Random Number - ${dice}`);
+
   //2. Display the dice
+  diceEl.classList.remove("hidden");
+  diceEl.src = `dice-`;
+
   //3. Search for rolled 1 , switch to next player
 });
