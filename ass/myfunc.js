@@ -5,7 +5,7 @@
 Press R key to roll dice 
 */
 
-btnRoll.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
   if (event.key === "r") {
     // 1. Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
