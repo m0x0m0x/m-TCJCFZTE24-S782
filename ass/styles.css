@@ -76,6 +76,7 @@ main {
   word-spacing: 2px;
   font-weight: 300;
   margin-bottom: 1rem;
+  color: #f077f2;
 }
 
 .score {
@@ -86,7 +87,7 @@ main {
 }
 
 .player--active {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #231b59;
 }
 .player--active .name {
   font-weight: 700;
@@ -136,8 +137,7 @@ main {
   font-weight: 400;
   transition: all 0.2s;
 
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #f077f2;
   backdrop-filter: blur(10px);
 
   padding: 0.7rem 2.5rem;
@@ -165,6 +165,10 @@ main {
 
 .btn--hold {
   top: 46.1rem;
+}
+.btn--hold:hover {
+  background-color: #1ac6d9;
+  color: white;
 }
 
 .btn:active {

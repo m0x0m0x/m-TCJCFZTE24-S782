@@ -36,7 +36,9 @@ const diceImages = {
 };
 
 // Current Score
+const scores = [0, 0];
 let currentScore = 0;
+let activePlayer = 0;
 
 // Rolling dice functionality
 btnRoll.addEventListener("click", function () {
