@@ -17,24 +17,10 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background: hsla(210, 91%, 39%, 1);
-
   background: linear-gradient(
-    90deg,
-    hsla(210, 91%, 39%, 1) 0%,
-    hsla(321, 55%, 50%, 1) 100%
-  );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(210, 91%, 39%, 1) 0%,
-    hsla(321, 55%, 50%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(210, 91%, 39%, 1) 0%,
-    hsla(321, 55%, 50%, 1) 100%
+    109.6deg,
+    rgb(43, 1, 91) 13.4%,
+    rgb(122, 2, 54) 100.2%
   );
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0965c0", endColorstr="#c53a94", GradientType=1 );
@@ -91,9 +77,11 @@ main {
 }
 .player--active .name {
   font-weight: 700;
+  color: #f2b705;
 }
 .player--active .score {
   font-weight: 400;
+  color: #05f2db;
 }
 
 .player--active .current {
@@ -166,6 +154,7 @@ main {
 .btn--roll:hover {
   background-color: #c7365f;
   color: white;
+  letter-spacing: 5px;
 }
 
 .btn--hold {
