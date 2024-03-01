@@ -154,6 +154,11 @@ main {
 .btn--new {
   top: 4rem;
 }
+.btn--new:hover {
+  top: 4rem;
+  background-color: #0a2326;
+  color: white;
+}
 
 .btn--roll {
   top: 39.3rem;

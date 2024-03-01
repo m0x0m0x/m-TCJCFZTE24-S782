@@ -6,6 +6,7 @@ Press R key to roll dice
 */
 
 document.addEventListener("keydown", function (event) {
+  // Works only with the r key
   if (event.key === "r") {
     // 1. Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
@@ -20,9 +21,12 @@ document.addEventListener("keydown", function (event) {
     if (dice != 1) {
       // Add dice to current score
       currentScore += dice;
-      current0El.textContent = currentScore; // Change Later
+      document.getElementById(`current--${activePlayer}`).textContent =
+        currentScore;
+      // current0El.textContent = currentScore;
     } else {
       // switch to next player
+      activePlayer = activePlayer === 0 ? 1 : 0;
     }
   }
 });
