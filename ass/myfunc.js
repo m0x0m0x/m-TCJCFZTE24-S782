@@ -1,5 +1,16 @@
 // These will be all my function being added
 
+// Dice Images
+const diceImages = {
+  1: "https://i.postimg.cc/Rhy7HBYk/image.png",
+  2: "https://i.postimg.cc/23NqY8MS/image.png",
+  3: "https://i.postimg.cc/TPvxfNRQ/image.png",
+  4: "https://i.postimg.cc/wBgrwCxK/image.png",
+  5: "https://i.postimg.cc/8kM0VkF8/image.png",
+  6: "https://i.postimg.cc/DZVPCsPS/image.png",
+  7: "https://github.com/m0x0m0x/m-TCJCFZTE24-S7/raw/main/asg.gif",
+};
+
 /*
 === Function 1 ===
 Press R key to roll dice 
@@ -53,6 +64,10 @@ document.addEventListener("keydown", function (event) {
       //2. Check score is altleast 100 >=100
       if (scores[activePlayer] >= 100) {
         playing = false;
+        //
+        diceEl.src = `${diceImages[7]}`;
+        diceElBG.style.backgroundImage = `url(${diceImages[7]})`;
+
         //  Finish game
         document
           .querySelector(`.player--${activePlayer}`)

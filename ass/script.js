@@ -27,16 +27,6 @@ score1El.textContent = 0;
 //Hiding the dice
 diceEl.classList.add("hidden");
 
-// Dice Images
-const diceImages = {
-  1: "https://i.postimg.cc/Rhy7HBYk/image.png",
-  2: "https://i.postimg.cc/23NqY8MS/image.png",
-  3: "https://i.postimg.cc/TPvxfNRQ/image.png",
-  4: "https://i.postimg.cc/wBgrwCxK/image.png",
-  5: "https://i.postimg.cc/8kM0VkF8/image.png",
-  6: "https://i.postimg.cc/DZVPCsPS/image.png",
-};
-
 // Current Score
 const scores = [0, 0];
 let currentScore = 0;
@@ -90,6 +80,8 @@ btnHold.addEventListener("click", function () {
     //2. Check score is altleast 100 >=100
     if (scores[activePlayer] >= 100) {
       playing = false;
+      diceEl.classList.add("hidden");
+      diceElBG.style.backgroundImage = `url(${diceImages[7]})`;
       //  Finish game
       document
         .querySelector(`.player--${activePlayer}`)
