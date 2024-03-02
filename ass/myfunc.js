@@ -26,25 +26,31 @@ document.addEventListener("keydown", function (event) {
       // current0El.textContent = currentScore;
     } else {
       // switch to next player
-      document.getElementById(`current--${activePlayer}`).textContent = 0;
-      currentScore = 0;
-      activePlayer = activePlayer === 0 ? 1 : 0;
-      player0El.classList.toggle("player--active");
-      player1El.classList.toggle("player--active");
+      switchPlayer();
     }
   }
 });
+// === end ===
 
-// document.addEventListener("keydown", function (event) {
-//     if (event.key === "Enter") {
-//       // 1. Generating a random dice roll
-//       const dice = Math.trunc(Math.random() * 6) + 1;
-//       console.log(`Generated Random Number - ${dice}`);
+/*
+=== Function 2 ===
+Press h key to hold score
+*/
 
-//       //2. Display the dice
-//       diceEl.classList.remove("hidden");
-//       diceEl.src = diceImages[dice];
+document.addEventListener("keydown", function (event) {
+  // Works only with the r key
+  if (event.key === "h") {
+    console.log("Hold Button");
+    // 1. Add current score to active players score
+    scores[activePlayer] += currentScore;
+    console.log(`ScoreActivePlayer: ${scores[activePlayer]}`);
+    document.getElementById(`score--${activePlayer}`).textContent =
+      scores[activePlayer];
 
-//       //3. Search for rolled 1 , switch to next player
-//     }
-//   });
+    //2. Check score is altleast 100 >=100
+    //  Finish game
+
+    // Switch to next player
+    switchPlayer();
+  }
+});
