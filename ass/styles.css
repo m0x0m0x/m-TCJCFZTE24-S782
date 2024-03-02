@@ -188,12 +188,13 @@ main {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #025940;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: #04bf8a;
+  box-shadow: 0px 0px 105px 25px rgba(45, 255, 196, 0.9);
 }
 
 /* Your work here  */

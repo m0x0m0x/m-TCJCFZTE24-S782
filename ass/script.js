@@ -84,8 +84,17 @@ btnHold.addEventListener("click", function () {
     scores[activePlayer];
 
   //2. Check score is altleast 100 >=100
-  //  Finish game
+  if (scores[activePlayer] >= 100) {
+    //  Finish game
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.add(`player--winner`);
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.remove(`player--active`);
+  } else {
+    switchPlayer();
+  }
 
   // Switch to next player
-  switchPlayer();
 });
