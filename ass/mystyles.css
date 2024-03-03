@@ -10,3 +10,22 @@
   background-size: cover;
 }
 /* ================= */
+
+/* Media Query For responsiveness */
+
+@media (max-width: 96em) {
+  html {
+    font-size: 40.5%;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 40.5%;
+  }
+}
+@media (max-width: 52em) {
+  html {
+    font-size: 20.5%;
+  }
+}
