@@ -81,3 +81,13 @@ document.addEventListener("keydown", function (event) {
     }
   }
 });
+
+/*
+=== Function 3 ===
+Reseting TO new Game 
+*/
+document.addEventListener("keydown", function (event) {
+  if (event.key === "n") {
+    init();
+  }
+});
